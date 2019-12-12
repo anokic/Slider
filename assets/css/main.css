@@ -16,6 +16,8 @@
 .slider-content {
   display: flex;
   position: relative;
+  transition: all .3s ease-in-out;
+  left: 0;
 }
 
 .container {
@@ -43,7 +45,7 @@
   text-align: center;
   margin-right: -10px;
   margin-left: -10px;
-  transition: background .3s ease-in;
+  transition: all .3s ease-in;
   cursor: pointer;
   }
   .slide:hover {

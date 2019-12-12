@@ -24,23 +24,35 @@ window.onload = () => {
   leftArrow.addEventListener('click', slideBack);
 
   function slideNext() {
-    counter--;
-    if(counter == -3){
-      counter = 3;
-    }
-    slider.style.left = ((first.offsetWidth - 20) * counter) +"px";
-    console.log("NEXT: " + counter);
-    console.log("NEXT: " + ((first.offsetWidth - 20) * counter));
+      if(counter >= slide[slide.length + 2]) return;
+      counter--;
+      slider.style.transition = 'all .3s ease-in-out';
+      slider.style.left = ((first.offsetWidth - 20) * counter) +"px";
+
+    console.log(slide.length);
+
   }
 
 
   function slideBack() {
-    counter++;
+      if(counter <= -3) return;
+      counter++;
+      slider.style.transition = 'all .3s ease-in-out';
+      slider.style.left = ((first.offsetWidth - 20) * counter) +"px";
+
+  }
+
+  slider.addEventListener('transitionend', checkIndex);
+
+  function checkIndex(){
     if(counter == 3){
-      counter = -3;
+      counter = slide.length - 6;
+      slider.style.transition = 'none';
+      slider.style.left = ((first.offsetWidth - 20) * counter) +"px";
+    } else if(counter == -3) {
+      counter = 3;
+      slider.style.transition = 'none';
+      slider.style.left = ((first.offsetWidth - 20) * counter) +"px";
     }
-    console.log("BACK: " + counter);
-    console.log("BACK: " + ((first.offsetWidth - 20) * counter) +"px");
-    slider.style.left = ((first.offsetWidth - 20) * counter) +"px";
   }
 }
