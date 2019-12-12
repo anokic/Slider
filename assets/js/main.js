@@ -15,14 +15,19 @@ window.onload = () => {
 
   slider.appendChild(slide[1].cloneNode(true));
   slider.prepend(slide[slide.length - 2].cloneNode(true));
+
+  slider.appendChild(slide[2].cloneNode(true));
+  slider.prepend(slide[slide.length - 3].cloneNode(true));
   // slider.style.left = "-" + (first.offsetWidth - 20) +"px";
 
   rightArrow.addEventListener('click', slideNext);
   leftArrow.addEventListener('click', slideBack);
 
   function slideNext() {
-
     counter--;
+    if(counter == -3){
+      counter = 3;
+    }
     slider.style.left = ((first.offsetWidth - 20) * counter) +"px";
     console.log("NEXT: " + counter);
     console.log("NEXT: " + ((first.offsetWidth - 20) * counter));
@@ -31,12 +36,9 @@ window.onload = () => {
 
   function slideBack() {
     counter++;
-    // if(counter == (counter - (slide.length-1))){
-    //   counter = (slide.length-1);
-    // }
-    // if(counter == -1){
-    //   counter = ;
-    // }
+    if(counter == 3){
+      counter = -3;
+    }
     console.log("BACK: " + counter);
     console.log("BACK: " + ((first.offsetWidth - 20) * counter) +"px");
     slider.style.left = ((first.offsetWidth - 20) * counter) +"px";
