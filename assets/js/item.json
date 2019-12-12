@@ -1,0 +1,38 @@
+[
+  {
+    "img" : "assets/img/slide1",
+    "name" : "Taj Burrow",
+    "email" : "@tajamos",
+    "loc" : "Wailua, HI"
+  },
+  {
+    "img" : "assets/img/slide2",
+    "name" : "Burrow Taj",
+    "email" : "@mostaja",
+    "loc" : "Hi, Wailua"
+  },
+  {
+    "img" : "assets/img/slide3",
+    "name" : "Otto Johnston",
+    "email" : "@otto",
+    "loc" : "Maxico, HI"
+  },
+  {
+    "img" : "assets/img/slide4",
+    "name" : "Alex Fletcher",
+    "email" : "@alex",
+    "loc" : "New York, HI"
+  },
+  {
+    "img" : "assets/img/slide5",
+    "name" : "Ivan White",
+    "email" : "@ivan",
+    "loc" : "Moscow, RU"
+  },
+  {
+    "img" : "assets/img/slide6",
+    "name" : "Ralph Kennedy",
+    "email" : "@ralph",
+    "loc" : "Valley, HI"
+  }
+]
