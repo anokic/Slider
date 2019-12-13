@@ -53,16 +53,18 @@ window.onload = () => {
 
 
       function slideNext() {
-          if(counter >= slide.length - 3) return;
+          if(counter >= (slide.length / 2)) return;
           counter++;
+          console.log(counter);
           slider.style.transition = 'all .3s ease-in-out';
           slider.style.left = ((jump_length + 20) * counter) +"px";
       }
 
 
       function slideBack() {
-          if(counter <= -3) return;
+          if(counter <= ((slide.length / 2) * -1)) return;
           counter--;
+          console.log(counter);
           slider.style.transition = 'all .3s ease-in-out';
           slider.style.left = ((jump_length + 20) * counter) +"px";
       }
@@ -70,12 +72,12 @@ window.onload = () => {
       slider.addEventListener('transitionend', checkIndex);
 
       function checkIndex(){
-        if(counter >= slide.length - 3){
-          counter = -3;
+        if(counter >= (slide.length / 2)){
+          counter = (slide.length / 2) * -1;
           slider.style.transition = 'none';
           slider.style.left = ((jump_length + 20) * counter) +"px";
-        } else if(counter <= -3) {
-          counter = 3;
+        } else if(counter <= ((slide.length / 2) * -1)) {
+          counter = slide.length / 2;
           slider.style.transition = 'none';
           slider.style.left = ((jump_length + 20) * counter) +"px";
         }

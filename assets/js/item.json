@@ -40,8 +40,32 @@
     "name" : "Brett Stewart",
     "email" : "@brett",
     "loc" : "Belgrade, SRB"
-  },
-  {
+  }
+  ,{
+    "img" : "assets/img/slide8.png",
+    "name" : "Angel Andrews",
+    "email" : "@angel",
+    "loc" : "Berlin, GR"
+  }
+  ,{
+    "img" : "assets/img/slide8.png",
+    "name" : "Angel Andrews",
+    "email" : "@angel",
+    "loc" : "Berlin, GR"
+  }
+  ,{
+    "img" : "assets/img/slide8.png",
+    "name" : "Angel Andrews",
+    "email" : "@angel",
+    "loc" : "Berlin, GR"
+  }
+  ,{
+    "img" : "assets/img/slide8.png",
+    "name" : "Angel Andrews",
+    "email" : "@angel",
+    "loc" : "Berlin, GR"
+  }
+  ,{
     "img" : "assets/img/slide8.png",
     "name" : "Angel Andrews",
     "email" : "@angel",
