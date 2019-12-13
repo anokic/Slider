@@ -2,6 +2,7 @@
    padding: 0;
    margin: 0;
    box-sizing: border-box;
+   font-family: 'Montserrat', sans-serif;
 }
 
 .slider {
@@ -101,10 +102,15 @@
 
   span {
     transition: all .3s ease-in;
-    display: block;
-    font-family: "Raleway";
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: rgb(140, 140, 140);
     font-size: 0.875rem;
+  }
+
+  span img {
+    margin-right: 3px;
   }
 
 
