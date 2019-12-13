@@ -1,38 +1,50 @@
 [
   {
-    "img" : "assets/img/slide1",
+    "img" : "assets/img/slide1.png",
     "name" : "Taj Burrow",
     "email" : "@tajamos",
     "loc" : "Wailua, HI"
   },
   {
-    "img" : "assets/img/slide2",
+    "img" : "assets/img/slide2.png",
     "name" : "Burrow Taj",
     "email" : "@mostaja",
     "loc" : "Hi, Wailua"
   },
   {
-    "img" : "assets/img/slide3",
+    "img" : "assets/img/slide3.png",
     "name" : "Otto Johnston",
     "email" : "@otto",
     "loc" : "Maxico, HI"
   },
   {
-    "img" : "assets/img/slide4",
+    "img" : "assets/img/slide4.png",
     "name" : "Alex Fletcher",
     "email" : "@alex",
     "loc" : "New York, HI"
   },
   {
-    "img" : "assets/img/slide5",
+    "img" : "assets/img/slide5.png",
     "name" : "Ivan White",
     "email" : "@ivan",
     "loc" : "Moscow, RU"
   },
   {
-    "img" : "assets/img/slide6",
+    "img" : "assets/img/slide6.png",
     "name" : "Ralph Kennedy",
     "email" : "@ralph",
     "loc" : "Valley, HI"
+  },
+  {
+    "img" : "assets/img/slide7.png",
+    "name" : "Brett Stewart",
+    "email" : "@brett",
+    "loc" : "Belgrade, SRB"
+  },
+  {
+    "img" : "assets/img/slide8.png",
+    "name" : "Angel Andrews",
+    "email" : "@angel",
+    "loc" : "Berlin, GR"
   }
 ]
